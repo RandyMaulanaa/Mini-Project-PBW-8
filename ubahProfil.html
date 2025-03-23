@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Profil - TugasIn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <h1>Tugas<span>In</span>.</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Proyek</a></li>
+                <li><a href="tasks.html"><i class="fas fa-tasks"></i> Tugas</a></li>
+                <li><a href="calendar.html"><i class="far fa-calendar"></i> Kalender</a></li>
+                <li><a href="reports.html"><i class="fas fa-chart-bar"></i> Laporan</a></li>
+                <li class="active"><a href="profile.html"><i class="fas fa-user"></i> Profil</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Pengaturan</a></li>
+            </ul>
+            <div class="logout">
+                <a href="login.html"><i class="fas fa-sign-out-alt"></i> Keluar</a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header>
+                <div class="header-content">
+                    <button id="menu-toggle" class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="user-info">
+                        <div class="notifications">
+                            <i class="far fa-bell"></i>
+                            <span class="badge">3</span>
+                        </div>
+                        <div class="user">
+                            <img src="/api/placeholder/36/36" alt="Profile">
+                            <span>Tinsari Rauhana</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="breadcrumb">
+                    <a href="dashboard.html">Dashboard</a> / <span>Ubah Profil</span>
+                </div>
+            </header>
+
+            <!-- Page Header -->
+            <div class="page-header">
+                <h2>Ubah Profil</h2>
+                <img class="page-illustration" src="/api/placeholder/200/150" alt="Profile Illustration">
+            </div>
+
+            <!-- Profile Section -->
+            <section class="profile-section">
+                <div class="profile-container">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <img src="/api/placeholder/100/100" alt="Profile Picture">
+                            <div class="upload-overlay">
+                                <label for="upload-photo">
+                                    <i class="fas fa-camera"></i>
+                                </label>
+                                <input type="file" id="upload-photo" accept="image/*">
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Informasi Profil</h3>
+                            <p>Perbarui informasi profil dan alamat email Anda</p>
+                        </div>
+                    </div>
+
+                    <div class="card card-profile">
+                        <div class="card-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Informasi Personal</h3>
+                        <p class="section-description">Informasi dasar tentang akun Anda</p>
+
+                        <form id="profile-form" class="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullname">Nama Lengkap</label>
+                                    <input type="text" id="fullname" name="fullname" value="Tinsari Rauhana" required>
+                                    <span class="error-message" id="fullname-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" id="username" name="username" value="tinsarirauhana" required>
+                                    <span class="error-message" id="username-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" value="tinsarirauhanaa@gmail.com" required>
+                                    <span class="error-message" id="email-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Nomor Telepon</label>
+                                    <input type="tel" id="phone" name="phone" value="0895325818597">
+                                    <span class="error-message" id="phone-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bio">Bio</label>
+                                <textarea id="bio" name="bio" rows="4">Project Manager dengan pengalaman 5 tahun dalam pengembangan aplikasi web dan mobile.</textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="card card-password">
+                        <div class="card-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Ubah Password</h3>
+                        <p class="section-description">Kosongkan jika tidak ingin mengubah password</p>
+
+                        <form class="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="current-password">Password Saat Ini</label>
+                                    <div class="password-input">
+                                        <input type="password" id="current-password" name="current-password">
+                                        <i class="fas fa-eye toggle-password" data-target="current-password"></i>
+                                    </div>
+                                    <span class="error-message" id="current-password-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="new-password">Password Baru</label>
+                                    <div class="password-input">
+                                        <input type="password" id="new-password" name="new-password">
+                                        <i class="fas fa-eye toggle-password" data-target="new-password"></i>
+                                    </div>
+                                    <span class="error-message" id="new-password-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm-password">Konfirmasi Password</label>
+                                    <div class="password-input">
+                                        <input type="password" id="confirm-password" name="confirm-password">
+                                        <i class="fas fa-eye toggle-password" data-target="confirm-password"></i>
+                                    </div>
+                                    <span class="error-message" id="confirm-password-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="button-group">
+                                <button type="button" class="btn-cancel">Batal</button>
+                                <button type="submit" class="btn-save">Simpan Perubahan</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
+</body>
+</html>
