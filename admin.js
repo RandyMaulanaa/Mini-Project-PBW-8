@@ -1,4 +1,41 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Mobile responsive sidebar
+const toggleSidebar = document.querySelector('.toggle-sidebar');
+const sidebar = document.querySelector('.sidebar');
+const sidebarOverlay = document.querySelector('.sidebar-overlay');
+const menuItems = document.querySelectorAll('.menu a');
+
+// Fungsi untuk toggle sidebar
+function toggleSidebarVisibility() {
+    sidebar.classList.toggle('active');
+    sidebarOverlay.classList.toggle('active');
+}
+
+// Event listeners untuk toggle sidebar
+if (toggleSidebar) {
+    toggleSidebar.addEventListener('click', toggleSidebarVisibility);
+}
+
+if (sidebarOverlay) {
+    sidebarOverlay.addEventListener('click', toggleSidebarVisibility);
+}
+
+// Tutup sidebar saat item menu diklik (di mobile)
+menuItems.forEach(item => {
+    item.addEventListener('click', function() {
+        if (window.innerWidth <= 576) {
+            toggleSidebarVisibility();
+        }
+    });
+});
+
+// Cek ukuran layar saat di-resize
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 576) {
+        sidebar.classList.remove('active');
+        sidebarOverlay.classList.remove('active');
+    }
+});
     // Modals
     const addUserModal = document.getElementById('addUserModal');
     const addUserBtn = document.getElementById('addUserBtn');
