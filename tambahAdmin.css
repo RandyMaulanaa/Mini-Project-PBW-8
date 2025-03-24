@@ -330,3 +330,175 @@ body {
         width: 100%;
     }
 }
+
+/* Menambahkan dan memodifikasi bagian CSS untuk meningkatkan responsivitas */
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 70px;
+        padding: 20px 0;
+    }
+    
+    .logo h1 {
+        display: none;
+    }
+    
+    .logo:after {
+        content: "TI";
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .menu a span {
+        display: none;
+    }
+    
+    .menu a i {
+        margin-right: 0;
+        font-size: 20px;
+    }
+    
+    .main-content {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Memperbaiki sidebar untuk tampilan mobile */
+    .sidebar {
+        width: 240px;
+        left: -240px;
+        z-index: 1000;
+    }
+    
+    .sidebar.active {
+        left: 0;
+    }
+    
+    .logo h1 {
+        display: block;
+    }
+    
+    .logo:after {
+        display: none;
+    }
+    
+    .menu a span {
+        display: inline;
+    }
+    
+    .menu a i {
+        margin-right: 10px;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .main-content.sidebar-active {
+        margin-left: 240px;
+    }
+    
+    /* Memperbaiki tampilan header */
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding-left: 50px;
+    }
+    
+    .toggle-sidebar {
+        background: transparent;
+        border: none;
+        color: var(--primary-color);
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    /* Memperbaiki form layout */
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .add-user-card {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Penyesuaian untuk layar sangat kecil */
+    .main-content {
+        padding: 15px 10px;
+    }
+    
+    .header {
+        padding: 12px 15px 12px 45px;
+        margin-bottom: 20px;
+    }
+    
+    .header h2 {
+        font-size: 18px;
+    }
+    
+    .user-profile img {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .user-profile h4 {
+        font-size: 14px;
+    }
+    
+    /* Perbaikan form dan tombol */
+    .form-control {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 10px 15px;
+    }
+    
+    /* Memastikan tampilan radio button tetap baik */
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Menambahkan overlay ketika sidebar aktif */
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    
+    .sidebar-overlay.active {
+        display: block;
+    }
+}
+
+.sidebar {
+    transition: all 0.3s ease-in-out;
+}
+
+html, body {
+    overflow-x: hidden;
+}
