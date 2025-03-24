@@ -43,19 +43,37 @@ document.addEventListener('DOMContentLoaded', function() {
             if (window.innerWidth <= 768) {
                 document.querySelector('.sidebar').classList.remove('active');
                 document.querySelector('.main-content').classList.remove('sidebar-active');
+                // Hapus overlay juga
+                const overlay = document.querySelector('.sidebar-overlay');
+                if (overlay) {
+                    overlay.classList.remove('active');
+                }
             }
         });
     });
     
-    // Toggle sidebar untuk tampilan mobile
+    // Toggle sidebar untuk tampilan mobile dengan overlay
     const toggleSidebarBtn = document.createElement('button');
     toggleSidebarBtn.className = 'toggle-sidebar';
     toggleSidebarBtn.innerHTML = '<i class="fas fa-bars"></i>';
     document.querySelector('.header').prepend(toggleSidebarBtn);
     
+    // Tambahkan overlay untuk sidebar
+    const sidebarOverlay = document.createElement('div');
+    sidebarOverlay.className = 'sidebar-overlay';
+    document.querySelector('.container').appendChild(sidebarOverlay);
+    
     toggleSidebarBtn.addEventListener('click', function() {
         document.querySelector('.sidebar').classList.toggle('active');
         document.querySelector('.main-content').classList.toggle('sidebar-active');
+        sidebarOverlay.classList.toggle('active');
+    });
+    
+    // Tutup sidebar saat overlay diklik
+    sidebarOverlay.addEventListener('click', function() {
+        document.querySelector('.sidebar').classList.remove('active');
+        document.querySelector('.main-content').classList.remove('sidebar-active');
+        this.classList.remove('active');
     });
     
     // Validasi form
@@ -158,11 +176,48 @@ document.addEventListener('DOMContentLoaded', function() {
         return emailPattern.test(email);
     }
     
+    // Deteksi sentuhan untuk perangkat mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    document.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }, false);
+    
+    document.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, false);
+    
+    function handleSwipe() {
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+        const overlay = document.querySelector('.sidebar-overlay');
+        
+        // Swipe right to open sidebar
+        if (touchEndX - touchStartX > 75 && !sidebar.classList.contains('active')) {
+            sidebar.classList.add('active');
+            mainContent.classList.add('sidebar-active');
+            overlay.classList.add('active');
+        }
+        
+        // Swipe left to close sidebar
+        if (touchStartX - touchEndX > 75 && sidebar.classList.contains('active')) {
+            sidebar.classList.remove('active');
+            mainContent.classList.remove('sidebar-active');
+            overlay.classList.remove('active');
+        }
+    }
+    
     // Menangani responsivitas pada perubahan ukuran layar
     window.addEventListener('resize', function() {
         if (window.innerWidth > 768) {
             document.querySelector('.sidebar').classList.remove('active');
             document.querySelector('.main-content').classList.remove('sidebar-active');
+            const overlay = document.querySelector('.sidebar-overlay');
+            if (overlay) {
+                overlay.classList.remove('active');
+            }
         }
     });
     
