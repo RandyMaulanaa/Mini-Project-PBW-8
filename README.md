@@ -8,7 +8,8 @@ Anggota:
 
 
 
-kita membuat database dulu dengan nama (login_db) dengan query
+kami membuat project dengan bahasa pemrograman html, css, java script, di ikuti dengan php untuk mengelola data dan koneksi ke database
+kami membuat database dulu dengan nama (login_db) dengan query
 
 CREATE DATABASE IF NOT EXISTS login_db;
 
@@ -20,4 +21,7 @@ CREATE TABLE IF NOT EXISTS users (
     email VARCHAR(100),
     password VARCHAR(255) NOT NULL
 );
+ini sebagai gambaran database yang di buat dengan value yang udah di input dari registrasi user:
+![image](https://github.com/user-attachments/assets/26466bcb-adfd-4612-9555-de4e9272acf2)
+
 
