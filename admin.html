@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Tambahkan ini di bawah tag <body> sebelum <div class="container"> -->
+<div class="toggle-sidebar">
+    <i class="fas fa-bars"></i>
+</div>
+
+<div class="sidebar-overlay"></div>
+
+<!-- Catatan: Tidak ada perubahan lain pada HTML yang diperlukan -->
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>Tugas<span>In</span></h1>
+              </div>
+            <ul class="menu">
+                <li><a href="admin.html" class="active"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+                <li><a href="admin.html"><i class="fas fa-tasks"></i> <span>Proyek</span></a></li>
+                <li><a href="admin.html"><i class="fas fa-clipboard-list"></i> <span>Tugas</span></a></li>
+                <li><a href="addAdmin.html"><i class="fas fa-users"></i> <span>Pengguna</span></a></li>
+                <li><a href="admin.html"><i class="fas fa-chart-pie"></i> <span>Laporan</span></a></li>
+                <li><a href="admin.html"><i class="fas fa-cog"></i> <span>Pengaturan</span></a></li>
+                <li><a href="semuaUser.php"><i class="fas fa-user nav-icon"></i> <span>Semua User</span></a></li>
+                <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> <span>Keluar</span></a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h2>Dashboard Admin</h2>
+                <div class="user-profile">
+                    <div class="notification">
+                        <i class="far fa-bell"></i>
+                        <span>5</span>
+                    </div>
+                    <img src="https://ui-avatars.com/api/?name=Admin&background=0D8ABC&color=fff&size=100" alt="Admin Profile">
+                    
+                    
+                    <div>
+                        <h4>Admin Sistem</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Stats -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>24</h3>
+                        <p>Total Proyek</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>156</h3>
+                        <p>Tugas Aktif</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>42</h3>
+                        <p>Pengguna</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>87%</h3>
+                        <p>Tingkat Penyelesaian</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-row">
+                <!-- Project Progress -->
+                <div class="dashboard-card progress-card">
+                    <div class="card-header">
+                        <h3>Progres Proyek</h3>
+                        <button class="btn-outline"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                    <div class="progress-list">
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <h4>Website Redesign</h4>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%; background-color: #4cd137;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <h4>Mobile App XYZ</h4>
+                                <span>45%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%; background-color: #fbc531;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <h4>Platform Integration</h4>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%; background-color: #4cd137;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <h4>Marketing Campaign</h4>
+                                <span>20%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 20%; background-color: #e84118;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activities -->
+                <div class="dashboard-card activity-card">
+                    <div class="card-header">
+                        <h3>Aktivitas Terbaru</h3>
+                        <button class="btn-outline"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon completed">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Update dokumentasi API selesai</h4>
+                                <p>Hari ini, 09:45</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon comment">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Siti Rahayu mengomentari tugas Revisi proposal klien ABC</h4>
+                                <p>Kemarin, 16:30</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon task">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Budi Santoso membuat tugas baru</h4>
+                                <p>Kemarin, 14:20</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon user">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Pengguna baru ditambahkan ke sistem</h4>
+                                <p>22 Mar 2025, 10:15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-row">
+                <!-- User Table -->
+                <div class="dashboard-card user-card">
+                    <div class="card-header">
+                        <h3>Pengguna Terbaru</h3>
+                        <a href="tambahAdmin.html" class="btn-primary" id="addUserBtn"><i class="fas fa-user-plus"></i> Tambah Pengguna</a>
+                    </div>
+                    <div class="user-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nama</th>
+                                    <th>Email</th>
+                                    <th>Departemen</th>
+                                    <th>Peran</th>
+                                    <th>Status</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="https://ui-avatars.com/api/?name=Budi&background=ffc107&color=fff&size=100" alt="User">
+                                            <span>Budi Santoso</span>
+                                        </div>
+                                    </td>
+                                    <td>budi.santoso@example.com</td>
+                                    <td>IT & Pengembangan</td>
+                                    <td><span class="badge admin">Admin</span></td>
+                                    <td><span class="badge active">Aktif</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="https://ui-avatars.com/api/?name=Siti&background=dc3545&color=fff&size=100" alt="User">
+                                            <span>Siti Rahayu</span>
+                                        </div>
+                                    </td>
+                                    <td>siti.rahayu@example.com</td>
+                                    <td>Pemasaran</td>
+                                    <td><span class="badge manager">Manajer</span></td>
+                                    <td><span class="badge active">Aktif</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="https://ui-avatars.com/api/?name=ahmad&background=0D8ABC&color=fff&size=100" alt="User">
+                                            <span>Ahmad Fauzi</span>
+                                        </div>
+                                    </td>
+                                    <td>ahmad.fauzi@example.com</td>
+                                    <td>Keuangan</td>
+                                    <td><span class="badge user">Pengguna</span></td>
+                                    <td><span class="badge inactive">Nonaktif</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="https://ui-avatars.com/api/?name=Dewi&background=6c757d&color=fff&size=100" alt="User">
+                                            <span>Dewi Lestari</span>
+                                        </div>
+                                    </td>
+                                    <td>dewi.lestari@example.com</td>
+                                    <td>SDM</td>
+                                    <td><span class="badge user">Pengguna</span></td>
+                                    <td><span class="badge active">Aktif</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="successToast" class="toast">
+        <div class="toast-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="toast-message">Pengguna baru berhasil ditambahkan!</div>
+        <button class="toast-close">&times;</button>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
