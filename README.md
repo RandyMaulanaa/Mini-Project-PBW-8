@@ -33,4 +33,20 @@ Ini merupakan halaman landing page (index.html) yang dimana ada tombol "Let's Se
 ![image](https://github.com/user-attachments/assets/cfc14f98-9032-4bb5-82c8-ace1c37f2232)
 Disini ada sedikit deskripsi tentang web ini dan ada anggota yang menangani setiap page, kita klik "OUR PROJECTS" untuk direct ke halaman login
 
+3. Login
+![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/rahmatun/image1.png?raw=true)
+Halaman ini menampilkan form login dengan input username dan password, tombol Sign In, link Sign in as Admin, serta tombol Sign Up untuk pengguna baru.
+
+5. Register
+![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/rahmatun/image2.png?raw=true)
+Halaman ini menampilkan form registrasi dengan input First Name, Last Name, Username, Email, dan Password, serta tombol Sign Up. Di sebelah kiri terdapat tombol Sign In untuk kembali ke halaman login.
+
+7. Dashboard User
+![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/rahmatun/image3.png?raw=true)
+Halaman ini merupakan dashboard yang menampilkan tugas dan progres proyek user yang sedang login. Nama pengguna ditampilkan di pojok kanan atas sebagai identifikasi akun yang sedang login.
+
+9. Halaman Profile
+![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/rahmatun/image4.png?raw=true)
+Halaman ini merupakan halaman profil yang menampilkan informasi akun dari user yang sedang login. Inisial RA diambil dari randyy yang merupakan dua huruf pertama username user. Informasi seperti nama lengkap, username, dan email diambil langsung dari database. Halaman ini berbentuk form sehingga user dapat langsung mengubah datanya dan menyimpan perubahan melalui tombol "Simpan Perubahan".
+
 
