@@ -54,11 +54,11 @@ Halaman ini merupakan halaman profil yang menampilkan informasi akun dari user y
 Ini adalah contoh ketika data profil user telah diubah. Misalnya, nama lengkap, username, atau email yang ditampilkan di form bisa diedit dan disimpan langsung.
 
 6. Dashboard Admin
-![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/profilChanged.png=true)
+![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/dashboard-admin.png)
 Halaman ini adalah dashboard khusus untuk admin. Di pojok kanan atas ada nama "admin sistem" sebagai username, lengkap dengan logo inisial dua huruf dari username tersebut. Di halaman ini admin dapat melihat dan mengelola data user.
 
 7. Semua Data User
-![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/profilChanged.png=true)
+![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/data-user.png)
 Halaman ini menampilkan seluruh user yang telah terdaftar. Field yang ditampilkan antara lain: ID, nama, username, email, dan password. Untuk kolom password, terlihat sebagai angka acak karena sudah melalui proses hashing, yaitu teknik untuk menyembunyikan password agar tidak bisa dibaca langsung.
 
 8. Aksi pada Data User
