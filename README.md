@@ -57,6 +57,7 @@ Ini adalah contoh ketika data profil user telah diubah. Misalnya, nama lengkap, 
 ![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/dashboard-admin.png)
 Halaman ini adalah dashboard khusus untuk admin. Di pojok kanan atas ada nama "admin sistem" sebagai username, lengkap dengan logo inisial dua huruf dari username tersebut. Di halaman ini admin dapat melihat dan mengelola data user.
 
+
 7. Semua Data User
 ![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/semuapengguna.png)
 Halaman ini menampilkan seluruh user yang telah terdaftar. Field yang ditampilkan antara lain: ID, nama, username, email, dan password. Untuk kolom password, terlihat sebagai angka acak karena sudah melalui proses hashing, yaitu teknik untuk menyembunyikan password agar tidak bisa dibaca langsung.
@@ -70,6 +71,7 @@ Di bagian ini tersedia tombol tindakan untuk hapus, edit, dan tambah user. Misal
 Halaman ini menampilkan daftar pengguna yang terdaftar dalam sistem. Terdapat tombol Tambah di bagian atas yang memungkinkan admin untuk menambahkan pengguna baru ke dalam sistem. Misalkan kita menambahkan 1 user baru makan akan muncul di id berikutnya.
 
 11. Id user yang bertambah
+    
 ![10](https://github.com/user-attachments/assets/a7050c03-576c-491e-9ea7-5d5263308cde)
 Setelah pengguna baru dengan nama angela ditambahkan, akun baru ini akan muncul di daftar dengan ID = 4, berurutan sesuai dengan data yang ada. Pengguna lainnya akan tetap memiliki ID yang berurutan, sehingga ID pengguna sebelumnya yang ada (misalnya, ID = 3) tetap berurutan setelah penambahan akun baru. Ini memastikan bahwa ID pengguna selalu berurutan tanpa ada celah meskipun data pengguna ditambah atau dihapus.
 
