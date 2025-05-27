@@ -64,3 +64,19 @@ Halaman ini menampilkan seluruh user yang telah terdaftar. Field yang ditampilka
 8. Aksi pada Data User
 ![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/data-user.png)
 Di bagian ini tersedia tombol tindakan untuk hapus, edit, dan tambah user. Misalnya, saat user dengan ID = 3 bernama "ewae" dihapus, maka user lain akan naik satu posisi. Jadi, user yang sebelumnya ID = 4 akan menjadi ID = 3. ID akan selalu berurutan sesuai jumlah data yang tersisa.
+
+9. Coba tambah user
+![9](https://github.com/user-attachments/assets/cab65f94-1eed-448e-83df-73b813d73f37)
+Halaman ini menampilkan daftar pengguna yang terdaftar dalam sistem. Terdapat tombol Tambah di bagian atas yang memungkinkan admin untuk menambahkan pengguna baru ke dalam sistem. Misalkan kita menambahkan 1 user baru makan akan muncul di id berikutnya.
+
+11. Id user yang bertambah
+![10](https://github.com/user-attachments/assets/a7050c03-576c-491e-9ea7-5d5263308cde)
+Setelah pengguna baru dengan nama angela ditambahkan, akun baru ini akan muncul di daftar dengan ID = 4, berurutan sesuai dengan data yang ada. Pengguna lainnya akan tetap memiliki ID yang berurutan, sehingga ID pengguna sebelumnya yang ada (misalnya, ID = 3) tetap berurutan setelah penambahan akun baru. Ini memastikan bahwa ID pengguna selalu berurutan tanpa ada celah meskipun data pengguna ditambah atau dihapus.
+
+13. Login dengan user lain
+![11](https://github.com/user-attachments/assets/009103ff-c551-4d7c-8592-a500a07a7045)
+Kita coba login dengan akun angela yang tadi ditambahkan, dan setelah berhasil masuk, nama angela akan muncul di pojok kanan atas sebagai indikator bahwa pengguna yang sedang login adalah angela.
+
+14. Halaman profil
+![12](https://github.com/user-attachments/assets/fd8d674d-f0f3-4a7a-96d4-97ca8d3a1db8)
+Ketika kita membuka halaman Profil setelah login dengan akun angela, halaman ini akan menampilkan informasi profil yang sesuai dengan akun yang sedang aktif. Di bagian atas, terdapat inisial AN yang mewakili nama angela. Di bawahnya, informasi profil pribadi seperti Nama Lengkap, Username, dan Email akan ditampilkan. Dengan demikian, profil yang muncul adalah milik angela, yang menandakan bahwa halaman ini sudah terhubung dengan akun angela.
