@@ -50,7 +50,7 @@ Halaman ini merupakan dashboard yang menampilkan tugas dan progres proyek user y
 Halaman ini merupakan halaman profil yang menampilkan informasi akun dari user yang sedang login. Inisial RA diambil dari randyy yang merupakan dua huruf pertama username user. Informasi seperti nama lengkap, username, dan email diambil langsung dari database. Halaman ini berbentuk form sehingga user dapat langsung mengubah datanya dan menyimpan perubahan melalui tombol "Simpan Perubahan".
 
 5. Halaman Profile Setelah diubah
-![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/profilChanged.png=true)
+![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/profilChanged.png)
 Ini adalah contoh ketika data profil user telah diubah. Misalnya, nama lengkap, username, atau email yang ditampilkan di form bisa diedit dan disimpan langsung.
 
 6. Dashboard Admin
