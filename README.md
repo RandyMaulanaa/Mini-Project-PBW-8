@@ -1,10 +1,10 @@
 # Mini-Project-PBW-8
 
 Anggota:
-1. Randy Maulana -2308107010054
-2. 
-3. 
-4. 
+1. Randy Maulana - 2308107010054
+2. Khairun Nisa - 2308107010074
+3. Rahmatun Nisa - 2308107010016
+4. Tinsari Rauhana - 2308107010038
 
 
 
