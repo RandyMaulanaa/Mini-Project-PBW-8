@@ -49,4 +49,18 @@ Halaman ini merupakan dashboard yang menampilkan tugas dan progres proyek user y
 ![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/rahmatun/image4.png?raw=true)
 Halaman ini merupakan halaman profil yang menampilkan informasi akun dari user yang sedang login. Inisial RA diambil dari randyy yang merupakan dua huruf pertama username user. Informasi seperti nama lengkap, username, dan email diambil langsung dari database. Halaman ini berbentuk form sehingga user dapat langsung mengubah datanya dan menyimpan perubahan melalui tombol "Simpan Perubahan".
 
+5. Halaman Profile Setelah diubah
+![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/profilChanged.png=true)
+Ini adalah contoh ketika data profil user telah diubah. Misalnya, nama lengkap, username, atau email yang ditampilkan di form bisa diedit dan disimpan langsung.
 
+6. Dashboard Admin
+![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/profilChanged.png=true)
+Halaman ini adalah dashboard khusus untuk admin. Di pojok kanan atas ada nama "admin sistem" sebagai username, lengkap dengan logo inisial dua huruf dari username tersebut. Di halaman ini admin dapat melihat dan mengelola data user.
+
+7. Semua Data User
+![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/profilChanged.png=true)
+Halaman ini menampilkan seluruh user yang telah terdaftar. Field yang ditampilkan antara lain: ID, nama, username, email, dan password. Untuk kolom password, terlihat sebagai angka acak karena sudah melalui proses hashing, yaitu teknik untuk menyembunyikan password agar tidak bisa dibaca langsung.
+
+8. Aksi pada Data User
+![image](https://github.com/RandyMaulanaa/Mini-Project-PBW-8/blob/main/profilChanged.png=true)
+Di bagian ini tersedia tombol tindakan untuk hapus, edit, dan tambah user. Misalnya, saat user dengan ID = 3 bernama "ewae" dihapus, maka user lain akan naik satu posisi. Jadi, user yang sebelumnya ID = 4 akan menjadi ID = 3. ID akan selalu berurutan sesuai jumlah data yang tersisa.
